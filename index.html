@@ -1,34 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Access7jtuteur AI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accès Tuteur — Valère</title>
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2162865');
+</script>
+<!-- End MailerLite Universal -->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#0a0a0a;padding:24px 16px 60px;color:#fff}
+.card{background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.3);border-radius:20px;padding:32px 20px;max-width:440px;margin:0 auto}
+.top{height:3px;background:linear-gradient(to right,#c9a84c,#e8c96a);border-radius:20px 20px 0 0;margin:-32px -20px 28px}
+.icon{width:60px;height:60px;background:linear-gradient(135deg,#c9a84c,#e8c96a);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin:0 auto 16px}
+h1{font-size:1.5rem;font-weight:800;color:#fff;line-height:1.25;margin-bottom:8px;text-align:center}
+h1 span{color:#e8c96a}
+.sub{font-size:.85rem;color:rgba(255,255,255,.45);line-height:1.6;margin-bottom:20px;text-align:center}
+.step-indicator{text-align:center;font-size:.75rem;color:rgba(255,255,255,.4);margin-bottom:16px;letter-spacing:1px;text-transform:uppercase}
+.pwd-box{background:rgba(201,168,76,.08);border:2px dashed rgba(201,168,76,.4);border-radius:12px;padding:16px;margin-bottom:16px;text-align:center}
+.pwd-label{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.35);display:block;margin-bottom:8px}
+.pwd-value{font-size:1.4rem;font-weight:800;color:#e8c96a;letter-spacing:3px;display:block;margin-bottom:12px}
+.btn-copy{background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.35);color:#c9a84c;font-weight:700;font-size:.82rem;padding:8px 20px;border-radius:100px;cursor:pointer}
+.timer{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px;margin-bottom:20px;text-align:center}
+.timer-label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.3);display:block;margin-bottom:8px}
+.trow{display:flex;justify-content:center;gap:6px}
+.tu{text-align:center;min-width:42px}
+.tn{display:block;font-size:1.4rem;font-weight:800;color:#fff}
+.tu.urgent .tn{color:#e74c3c}
+.tl{font-size:.6rem;color:rgba(255,255,255,.3);text-transform:uppercase}
+.ts{font-size:1.2rem;color:rgba(255,255,255,.2);align-self:center;margin-bottom:12px}
+.tbar{height:4px;background:rgba(255,255,255,.08);border-radius:100px;margin-top:8px}
+.tf{height:100%;border-radius:100px;background:linear-gradient(to right,#c9a84c,#e8c96a)}
+.sep{display:flex;align-items:center;gap:8px;margin-bottom:14px}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:rgba(255,255,255,.08)}
+.sep span{font-size:.75rem;color:rgba(255,255,255,.25);white-space:nowrap}
+.iw{position:relative;margin-bottom:12px}
+.ii{position:absolute;left:12px;top:50%;transform:translateY(-50%)}
+input{width:100%;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.12);border-radius:10px;padding:14px 42px;color:#fff;font-size:1rem;letter-spacing:2px;outline:none}
+input::placeholder{color:rgba(255,255,255,.25);letter-spacing:1px}
+input:focus{border-color:rgba(201,168,76,.6)}
+.eye{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,.3);cursor:pointer;font-size:1rem}
+.btn-go{width:100%;background:linear-gradient(135deg,#c9a84c,#e8c96a);color:#0a0a0a;font-weight:800;font-size:1rem;padding:16px;border:none;border-radius:10px;cursor:pointer;box-shadow:0 8px 25px rgba(201,168,76,.35)}
+.err{display:none;background:rgba(231,76,60,.1);border:1px solid rgba(231,76,60,.3);border-radius:8px;padding:12px;color:#e74c3c;font-size:.82rem;margin-top:12px}
+.err.show{display:block}
+.expired{display:none}
+.expired.show{display:block;text-align:center}
+.expired h2{font-size:1.4rem;font-weight:800;color:#fff;margin:14px 0 8px}
+.expired p{color:rgba(255,255,255,.5);font-size:.85rem;line-height:1.6;margin-bottom:20px}
+.offers{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.offer{border-radius:12px;padding:16px 12px;text-align:center;text-decoration:none;display:block}
+.offer.m{background:rgba(44,123,229,.12);border:1px solid rgba(44,123,229,.3)}
+.offer.v{background:rgba(201,168,76,.1);border:2px solid rgba(201,168,76,.4)}
+.oi{font-size:1.5rem;display:block;margin-bottom:5px}
+.on{color:#fff;font-weight:700;font-size:.8rem;display:block;margin-bottom:4px}
+.op{font-size:1.1rem;font-weight:800;display:block}
+.offer.m .op{color:#5b9cf6}
+.offer.v .op{color:#e8c96a}
+.os{font-size:.65rem;color:rgba(255,255,255,.3);display:block;margin-top:2px}
+.success{display:none;text-align:center}
+.success.show{display:block}
+.si{width:72px;height:72px;background:linear-gradient(135deg,#27ae60,#2ecc71);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 14px;box-shadow:0 8px 30px rgba(39,174,96,.4)}
+.success h2{color:#fff;font-size:1.3rem;font-weight:800;margin-bottom:8px}
+.success p{color:rgba(255,255,255,.5);font-size:.85rem;line-height:1.6;margin-bottom:20px}
+.btn-t{display:inline-block;background:linear-gradient(135deg,#c9a84c,#e8c96a);color:#0a0a0a;font-weight:800;font-size:.95rem;padding:15px 32px;border-radius:10px;text-decoration:none}
+.footer{margin-top:24px;padding-top:16px;border-top:1px solid rgba(255,255,255,.07);display:flex;align-items:center;gap:10px}
+.av{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#c9a84c,#e8c96a);display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0}
+.an{color:rgba(255,255,255,.75);font-weight:700;font-size:.8rem;display:block}
+.at{color:rgba(255,255,255,.3);font-size:.65rem}
+#email-step{display:block}
+#password-step{display:none}
+</style>
 </head>
 <body>
-    <h1>Welcome to Access7jtuteur AI</h1>
+<div class="card">
+<div class="top"></div>
 
-    <form id="email-form">
-        <label for="email">Enter your email to proceed:</label>
-        <input type="email" id="email" name="email" required>
-        <button type="submit">Submit</button>
-    </form>
+<!-- ÉTAPE 1: EMAIL CAPTURE -->
+<div id="email-step">
+<div class="icon">📧</div>
+<h1>Accès gratuit<br><span>7 jours !</span></h1>
+<p class="sub step-indicator">📍 ÉTAPE 1 DE 2</p>
+<p class="sub">Entrez votre email pour commencer votre essai gratuit.</p>
 
-    <div id="verification-step" style="display:none;">
-        <h2>Password Verification</h2>
-        <form id="password-form">
-            <label for="password">Enter your password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Verify</button>
-        </form>
-    </div>
+<div class="iw">
+<span class="ii">✉️</span>
+<input type="email" id="email-input" placeholder="Votre adresse email" required/>
+</div>
+<button class="btn-go" onclick="validateEmail()">🚀 Continuer</button>
+<div class="err" id="email-err">❌ <strong>Email invalide.</strong><br><span>Vérifiez votre adresse email.</span></div>
+<div class="footer"><div class="av">👨‍🏫</div><div><span class="an">Valère Niyomaza</span><span class="at">Professeur certifié · African American Academy · Harvard Online</span></div></div>
+</div>
 
-    <script>
-        document.getElementById('email-form').onsubmit = function(event) {
-            event.preventDefault();
-            // Here you would add your MailerLite integration
-            document.getElementById('verification-step').style.display = 'block';
-        };
-    </script>
+<!-- ÉTAPE 2: PASSWORD VERIFICATION -->
+<div id="password-step">
+<div class="icon">🎧</div>
+<h1>Votre accès gratuit<br><span>est activé !</span></h1>
+<p class="sub step-indicator">📍 ÉTAPE 2 DE 2</p>
+<p class="sub">Copiez votre mot de passe ci-dessous et collez-le pour accéder à votre tuteur.</p>
+
+<div class="pwd-box">
+<span class="pwd-label">🔑 Votre mot de passe</span>
+<span class="pwd-value" id="pv">VALERE7JOURS</span>
+<button class="btn-copy" id="bc" onclick="copier()">📋 Copier et coller automatiquement</button>
+</div>
+
+<div class="timer" id="tb">
+<span class="timer-label">⏳ Temps restant sur votre accès</span>
+<div class="trow">
+<div class="tu" id="uj"><span class="tn" id="tj">07</span><span class="tl">Jours</span></div>
+<span class="ts">:</span>
+<div class="tu" id="uh"><span class="tn" id="th">00</span><span class="tl">Heures</span></div>
+<span class="ts">:</span>
+<div class="tu" id="um"><span class="tn" id="tm">00</span><span class="tl">Mins</span></div>
+<span class="ts">:</span>
+<div class="tu" id="us"><span class="tn" id="ts">00</span><span class="tl">Secs</span></div>
+</div>
+<div class="tbar"><div class="tf" id="tf" style="width:100%"></div></div>
+</div>
+
+<div class="sep"><span>Entrez votre mot de passe pour accéder</span></div>
+<div class="iw">
+<span class="ii">🔐</span>
+<input type="password" id="pi" placeholder="Collez votre mot de passe ici" onkeydown="if(event.key==='Enter')go()"/>
+<button class="eye" onclick="voir()">👁</button>
+</div>
+
+<button class="btn-go" onclick="go()">🚀 Accéder à mon tuteur maintenant</button>
+<div class="err" id="er">❌ <strong>Mot de passe incorrect.</strong><br><span id="et">Appuyez sur Copier ci-dessus — ça colle automatiquement !</span></div>
+<div class="footer"><div class="av">👨‍🏫</div><div><span class="an">Valère Niyomaza</span><span class="at">Professeur certifié · African American Academy · Harvard Online</span></div></div>
+</div>
+
+<!-- SUCCESS STATE -->
+<div id="suc" class="success">
+<div class="si">✅</div>
+<h2>Accès confirmé !</h2>
+<p>Votre tuteur s'ouvre maintenant…<br>Bonne session ! 🎓</p>
+<a href="https://elevenlabs.io/app/talk-to?agent_id=agent_4601kg4k1xk8fwctg5ev6qkerxmb&branch_id=agtbrch_5701kg4k1zh8fvsrf28gkese04mb" target="_blank" class="btn-t">🎧 Démarrer mon tuteur →</a>
+<p style="font-size:.72rem;color:rgba(255,255,255,.2);margin-top:12px">Si ça ne s'ouvre pas, cliquez le bouton.</p>
+</div>
+
+<!-- EXPIRED STATE -->
+<div id="exp" class="expired">
+<div style="font-size:2.5rem">⏰</div>
+<h2>Votre essai est terminé</h2>
+<p>Continuez votre progression avec Valère :</p>
+<div class="offers">
+<a href="LIEN_FEDAPAY_MENSUEL" class="offer m" target="_blank"><span class="oi">📅</span><span class="on">Mensuel</span><span class="op">3 500 FCFA</span><span class="os">5€/mois</span></a>
+<a href="LIEN_FEDAPAY_VIE" class="offer v" target="_blank"><span class="oi">⭐</span><span class="on">À Vie</span><span class="op">25 000 FCFA</span><span class="os">29€ une fois</span></a>
+</div>
+<p style="font-size:.72rem;color:rgba(255,255,255,.2)">Orange Money · Carte Visa · Accès immédiat</p>
+<div class="footer"><div class="av">👨‍🏫</div><div><span class="an">Valère Niyomaza</span><span class="at">Professeur certifié · African American Academy · Harvard Online</span></div></div>
+</div>
+
+</div>
+
+<script>
+var E='VALERE7JOURS',M='VALERE2025VIP',V='VALERE2025AVIE';
+var L='https://elevenlabs.io/app/talk-to?agent_id=agent_4601kg4k1xk8fwctg5ev6qkerxmb&branch_id=agtbrch_5701kg4k1zh8fvsrf28gkese04mb';
+var type='essai';
+if(location.search.indexOf('type=mensuel')>-1)type='mensuel';
+else if(location.search.indexOf('type=vie')>-1)type='vie';
+if(type==='mensuel'){document.getElementById('pv').textContent=M;}
+else if(type==='vie'){document.getElementById('pv').textContent=V;document.getElementById('tb').style.display='none';}
+
+var dur=7*24*60*60*1000,exp=null;
+if(type==='essai'){var d=localStorage.getItem('vd')||String(Date.now());localStorage.setItem('vd',d);exp=new Date(parseInt(d)+dur);if(new Date()>exp){document.getElementById('email-step').style.display='none';document.getElementById('password-step').style.display='none';document.getElementById('exp').classList.add('show');}
+}else if(type==='mensuel'){var n=new Date();exp=new Date(n.getFullYear(),n.getMonth()+1,1);dur=30*24*60*60*1000;}
+
+function validateEmail(){
+var em=document.getElementById('email-input').value.trim();
+var re=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if(!re.test(em)){document.getElementById('email-err').classList.add('show');return;}
+document.getElementById('email-err').classList.remove('show');
+localStorage.setItem('ve',em);
+if(window.ml){window.ml('identify',{email:em});}
+document.getElementById('email-step').style.display='none';document.getElementById('password-step').style.display='block';
+}
+
+function tick(){
+if(!exp)return;
+var df=exp-new Date();
+if(df<=0){document.getElementById('password-step').style.display='none';document.getElementById('exp').classList.add('show');return;}
+var j=Math.floor(df/86400000),h=Math.floor((df%86400000)/3600000),m=Math.floor((df%3600000)/60000),s=Math.floor((df%60000)/1000);
+document.getElementById('tj').textContent=String(j).padStart(2,'0');
+document.getElementById('th').textContent=String(h).padStart(2,'0');
+document.getElementById('tm').textContent=String(m).padStart(2,'0');
+document.getElementById('ts').textContent=String(s).padStart(2,'0');
+var u=df<86400000;
+['uj','uh','um','us'].forEach(function(i){document.getElementById(i).classList.toggle('urgent',u);});
+var p=Math.min(100,(df/dur)*100);
+var f=document.getElementById('tf');f.style.width=p+'%';
+f.style.background=p>30?'linear-gradient(to right,#c9a84c,#e8c96a)':'linear-gradient(to right,#e74c3c,#e67e22)';
+}
+
+if(exp){tick();setInterval(tick,1000);}
+
+var tries=0;
+function go(){
+if(type==='essai'&&exp&&new Date()>exp){document.getElementById('password-step').style.display='none';document.getElementById('exp').classList.add('show');return;}
+var s=document.getElementById('pi').value.trim().toUpperCase();
+if(tries>=5){document.getElementById('et').textContent='Trop de tentatives. Attendez 15 minutes.';document.getElementById('er').classList.add('show');return;}
+if(s===E||s===M||s===V){document.getElementById('password-step').style.display='none';document.getElementById('suc').classList.add('show');setTimeout(function(){window.open(L,'_blank');},1500);}
+else{tries++;document.getElementById('er').classList.add('show');document.getElementById('et').textContent=tries<5?'Incorrect. '+(5-tries)+' tentative(s).':'Bloqué temporairement.';document.getElementById('pi').value='';}
+}
+
+function copier(){
+var v=document.getElementById('pv').textContent;
+document.getElementById('pi').value=v;
+if(navigator.clipboard)navigator.clipboard.writeText(v).catch(function(){});
+var b=document.getElementById('bc');b.textContent='✅ Collé dans le champ !';
+setTimeout(function(){b.textContent='📋 Copier et coller automatiquement';},3000);
+}
+
+function voir(){var i=document.getElementById('pi');i.type=i.type==='password'?'text':'password';}
+</script>
 </body>
 </html>
